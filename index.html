@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Estilo para o corpo da página, centralizando tudo */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0px;
+            background-color: #000000;
+            padding: 0; /* Garantir que não haja margens extras */
+        }
+
+        /* Estilo das imagens */
+        img {
+            width: 500px;
+            height: 900px;
+            margin-bottom: 0px; /* Espaço entre as imagens e o botão */
+        }
+
+        /* Estilo do botão pulsante */
+        .pulsante {
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            animation: pulsar 1.5s infinite;
+            margin-top: 20px; /* Espaço entre o botão e as imagens */
+            height: 80px;
+            width: 400px;
+            margin-bottom: 30px;
+        }
+
+        /* Animação pulsante do botão */
+        @keyframes pulsar {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Estilo do link para que fique alinhado ao botão */
+        h1 {
+            text-align: center;
+            color: white; /* Tornar o texto legível */
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="./Imagem do WhatsApp de 2025-03-07 à(s) 01.00.42_dc52b1d0.jpg" alt="Imagem 1">
+    <img src="./Imagem do WhatsApp de 2025-03-07 à(s) 01.00.42_5476a1d8.jpg" alt="Imagem 2">
+    <img src="./Imagem do WhatsApp de 2025-03-07 à(s) 01.00.42_b39b04c3.jpg" alt="Imagem 3">
+
+    <h1>Acessem o link do material de apoio abaixo</h1>
+
+    <a href="https://drive.google.com/drive/folders/1B9WgkmEX_eOiaJN9SQGTwov_hNddtYHP" target="_blank">
+        <button class="pulsante">Link Prova Social</button>
+    </a>
+
+</body>
+</html>
