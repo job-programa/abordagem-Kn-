@@ -14,13 +14,16 @@
             margin: 0px;
             background-color: #000000;
             padding: 0; /* Garantir que não haja margens extras */
+            height: 100vh; /* Altura total da tela para garantir que a página ocupe a tela inteira */
+            box-sizing: border-box;
         }
 
         /* Estilo das imagens */
         img {
-            width: 500px;
-            height: 900px;
-            margin-bottom: 0px; /* Espaço entre as imagens e o botão */
+            width: 100%;
+            max-width: 500px; /* Limitar o tamanho máximo das imagens */
+            height: auto; /* Garantir que a altura se ajuste proporcionalmente à largura */
+            margin-bottom: 10px; /* Espaço entre as imagens e o botão */
         }
 
         /* Estilo do botão pulsante */
@@ -35,7 +38,8 @@
             animation: pulsar 1.5s infinite;
             margin-top: 20px; /* Espaço entre o botão e as imagens */
             height: 80px;
-            width: 400px;
+            width: 90%; /* Tornar o botão mais largo */
+            max-width: 450px; /* Limitar o tamanho máximo do botão */
             margin-bottom: 30px;
         }
 
@@ -52,21 +56,52 @@
             }
         }
 
-        /* Estilo do link para que fique alinhado ao botão */
+        /* Estilo do título */
         h1 {
             text-align: center;
             color: white; /* Tornar o texto legível */
+            margin-top: 20px;
         }
 
+        /* Estilo do link para que fique alinhado ao botão */
         a {
             text-decoration: none;
+        }
+
+        /* Media Query para telas pequenas */
+        @media (max-width: 768px) {
+            img {
+                max-width: 100%; /* Imagens vão ocupar toda a largura disponível */
+            }
+
+            .pulsante {
+                width: 90%; /* O botão vai ocupar 90% da largura da tela */
+                height: 70px; /* Ajustar o tamanho do botão para telas menores */
+            }
+
+            h1 {
+                font-size: 18px; /* Ajustar o tamanho da fonte do título em telas pequenas */
+            }
+        }
+
+        /* Media Query para telas ainda menores (como celulares em modo retrato) */
+        @media (max-width: 480px) {
+            .pulsante {
+                width: 90%; /* O botão vai ocupar 90% da largura da tela */
+                height: 60px; /* Reduzir o tamanho do botão */
+                font-size: 14px; /* Ajustar o tamanho da fonte do botão */
+            }
+
+            h1 {
+                font-size: 16px; /* Ajustar o tamanho da fonte do título */
+            }
         }
     </style>
 </head>
 <body>
 
     <img src="./Imagem do WhatsApp de 2025-03-07 à(s) 01.00.42_dc52b1d0.jpg" alt="Imagem 1">
-    <img src="./Imagem do WhatsApp de 2025-03-07 à(s) 01.00.42_5476a1d8.jpg" alt="Imagem 2">
+    <img src="./Imagem do WhatsApp de 2025-03-07 à(s) 01.00.42_dc52b1d0.jpg" alt="Imagem 2">
     <img src="./Imagem do WhatsApp de 2025-03-07 à(s) 01.00.42_b39b04c3.jpg" alt="Imagem 3">
 
     <h1>Acessem o link do material de apoio abaixo</h1>
